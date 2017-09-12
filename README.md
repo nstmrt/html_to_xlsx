@@ -85,13 +85,12 @@ html_to_xlsx associates HTML nodes with Axlsx objects as follows:
 | tr       | row          |
 | td, th   | cell         |
 
-```
 
 ### Using along side axlsx-rails
 If you are using [axlsx-rails](https://github.com/straydogstudio/axlsx_rails), :xlsx renderer might have already been defined. In that case define a custome renderer using
 ```ruby
 # app/config/application.rb
-config.to_spreadsheet.renderer = :html2xlsx
+config.html_to_xlsx.renderer = :html2xlsx
 ```
 
 And then in controller
