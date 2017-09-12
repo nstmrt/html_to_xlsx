@@ -23,4 +23,8 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'nokogiri'
   spec.add_dependency 'axlsx'
+  spec.add_dependency 'rails'
+  spec.add_development_dependency 'haml-rails'
+  spec.add_development_dependency 'rspec-rails'
+  spec.add_development_dependency 'combustion'
 end

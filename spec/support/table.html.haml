@@ -1,0 +1,12 @@
+:ruby
+  format_xls do
+    format 'tr', fg_color: lambda { |row| 'cccccc' if row.index.odd? }
+    format 'table' do |ws|
+      ws.name = 'Test'
+    end
+  end
+%table
+  %tr
+    %th
+  %tr
+    %td
